@@ -1,0 +1,4 @@
+22:09:06.353283376 [27982] main.cpp:19                  LOG_DEBUG     root         Build date: 2024-08-27 22:08:25.3N
+22:09:06.353417087 [27982] main.cpp:20                  LOG_DEBUG     root         Project version: 1.0.0
+22:09:06.458566954 [27982] main.cpp:26                  LOG_INFO      root         Body: Hello World!
+22:09:06.458570107 [27982] main.cpp:27                  LOG_INFO      root         Status: 200

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['if2ip_0',['if2ip',['../a00015.html#a4b14d35027dddb92656dc00527cf3a71',1,'httplib::detail']]],
+  ['initialize_5flogger_1',['initialize_logger',['../a00002.html#a5612e7039d064556accc794105a7397b',1,'initialize_logger():&#160;logger.cpp'],['../a00011.html#a5612e7039d064556accc794105a7397b',1,'initialize_logger():&#160;logger.cpp']]],
+  ['is_5fchunked_5ftransfer_5fencoding_2',['is_chunked_transfer_encoding',['../a00015.html#abd6e246430f90f7881c9475acb026d00',1,'httplib::detail']]],
+  ['is_5fconnection_5ferror_3',['is_connection_error',['../a00015.html#aefb0b64a836468f95269d11943464a29',1,'httplib::detail']]],
+  ['is_5fdir_4',['is_dir',['../a00015.html#af1f56433b3a10b13b2f914de33bd6e31',1,'httplib::detail']]],
+  ['is_5ffile_5',['is_file',['../a00015.html#a5d432e56b6e9cdb1d3a47477d3b3684e',1,'httplib::detail']]],
+  ['is_5fhex_6',['is_hex',['../a00015.html#a4a74a4e9cde826f1a91894f63ddb2d9a',1,'httplib::detail']]],
+  ['is_5fmultipart_5fboundary_5fchars_5fvalid_7',['is_multipart_boundary_chars_valid',['../a00015.html#ae4cbb364380280ebf28f477dfe11f9c3',1,'httplib::detail']]],
+  ['is_5fmultipart_5fform_5fdata_8',['is_multipart_form_data',['../a00048.html#a9be91099296a3c65ae972cc2bfaf578a',1,'httplib::Request']]],
+  ['is_5fopen_9',['is_open',['../a00100.html#a013475066c10b72f2a771484e6d47c32',1,'httplib::ClientImpl::Socket::is_open()'],['../a00128.html#aaa2acc0ec01483dd6670f026c078febc',1,'httplib::detail::mmap::is_open()']]],
+  ['is_5freadable_10',['is_readable',['../a00056.html#af0a78453c54817f8fc0de91f8b02c12c',1,'httplib::Stream::is_readable()'],['../a00108.html#adb3eaa4fd33ef7d1d538bf014c30fc0a',1,'httplib::detail::BufferStream::is_readable()'],['../a00132.html#a54ef15b31ba398e33086574d412fb316',1,'httplib::detail::SocketStream::is_readable()']]],
+  ['is_5frunning_11',['is_running',['../a00084.html#a93a632ffae8eea0380daaac719cba06c',1,'httplib::Server']]],
+  ['is_5fsocket_5falive_12',['is_socket_alive',['../a00015.html#a261b439327ed5df0ce9044ca2731d3de',1,'httplib::detail']]],
+  ['is_5fsocket_5fopen_13',['is_socket_open',['../a00096.html#adb81f18287fc15afae42574b8964ae6f',1,'httplib::ClientImpl::is_socket_open()'],['../a00104.html#a957657b5e4eed5143bc9e864c85f4e49',1,'httplib::Client::is_socket_open()']]],
+  ['is_5fspace_5for_5ftab_14',['is_space_or_tab',['../a00015.html#a516825616cd42123cbe974a9f42718aa',1,'httplib::detail']]],
+  ['is_5fvalid_15',['is_valid',['../a00084.html#a4f02314a47adbae984a7483e8e820c05',1,'httplib::Server::is_valid()'],['../a00096.html#afbe91bdb3eb3b30f37aad3c49ae3285d',1,'httplib::ClientImpl::is_valid()'],['../a00104.html#a98220aab6695ad08bba0b93842665946',1,'httplib::Client::is_valid()'],['../a00116.html#adf987b42198e8f9fdd555ce9577341ba',1,'httplib::detail::decompressor::is_valid()'],['../a00136.html#a48c95a9bd0a1724cbbee8d1dfda7d7af',1,'httplib::detail::MultipartFormDataParser::is_valid()']]],
+  ['is_5fvalid_5fpath_16',['is_valid_path',['../a00015.html#a955ed1d5e52f6e2513d06d969ceeb668',1,'httplib::detail']]],
+  ['is_5fwritable_17',['is_writable',['../a00056.html#ab10c55e43ccf0146c4d142e53a58a831',1,'httplib::Stream::is_writable()'],['../a00108.html#a7b8c6924fbb6bb51e7e21e364b62c7fb',1,'httplib::detail::BufferStream::is_writable()'],['../a00132.html#aa5bf41c972f307030f34de1c7dbb25d9',1,'httplib::detail::SocketStream::is_writable()']]]
+];
