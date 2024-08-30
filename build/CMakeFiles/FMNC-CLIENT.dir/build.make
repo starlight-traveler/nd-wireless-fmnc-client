@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paillet/local/research/research-frontendclient-fmnc
+CMAKE_SOURCE_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/build
+CMAKE_BINARY_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FMNC-CLIENT.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/FMNC-CLIENT.dir/progress.make
 include CMakeFiles/FMNC-CLIENT.dir/flags.make
 
 CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o: CMakeFiles/FMNC-CLIENT.dir/flags.make
-CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o: /Users/paillet/local/research/research-frontendclient-fmnc/src/main.cpp
+CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o: /Users/rpaillet/local/research/research-frontendclient-fmnc/src/main.cpp
 CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o: CMakeFiles/FMNC-CLIENT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o -MF CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o.d -o CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o -c /Users/paillet/local/research/research-frontendclient-fmnc/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o -MF CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o.d -o CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o -c /Users/rpaillet/local/research/research-frontendclient-fmnc/src/main.cpp
 
 CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paillet/local/research/research-frontendclient-fmnc/src/main.cpp > CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rpaillet/local/research/research-frontendclient-fmnc/src/main.cpp > CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.i
 
 CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paillet/local/research/research-frontendclient-fmnc/src/main.cpp -o CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rpaillet/local/research/research-frontendclient-fmnc/src/main.cpp -o CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.s
 
 CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o: CMakeFiles/FMNC-CLIENT.dir/flags.make
-CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o: /Users/paillet/local/research/research-frontendclient-fmnc/src/logger.cpp
+CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o: /Users/rpaillet/local/research/research-frontendclient-fmnc/src/logger.cpp
 CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o: CMakeFiles/FMNC-CLIENT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o -MF CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o.d -o CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o -c /Users/paillet/local/research/research-frontendclient-fmnc/src/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o -MF CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o.d -o CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o -c /Users/rpaillet/local/research/research-frontendclient-fmnc/src/logger.cpp
 
 CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paillet/local/research/research-frontendclient-fmnc/src/logger.cpp > CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rpaillet/local/research/research-frontendclient-fmnc/src/logger.cpp > CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.i
 
 CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paillet/local/research/research-frontendclient-fmnc/src/logger.cpp -o CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rpaillet/local/research/research-frontendclient-fmnc/src/logger.cpp -o CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.s
 
 # Object files for target FMNC-CLIENT
 FMNC__CLIENT_OBJECTS = \
@@ -108,12 +108,14 @@ FMNC__CLIENT_EXTERNAL_OBJECTS =
 FMNC-CLIENT: CMakeFiles/FMNC-CLIENT.dir/src/main.cpp.o
 FMNC-CLIENT: CMakeFiles/FMNC-CLIENT.dir/src/logger.cpp.o
 FMNC-CLIENT: CMakeFiles/FMNC-CLIENT.dir/build.make
-FMNC-CLIENT: /usr/local/opt/openssl/lib/libssl.dylib
-FMNC-CLIENT: /usr/local/opt/openssl/lib/libcrypto.dylib
+FMNC-CLIENT: /opt/homebrew/opt/openssl@3/lib/libssl.dylib
+FMNC-CLIENT: /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib
+FMNC-CLIENT: /opt/homebrew/opt/openssl@3/lib/libssl.dylib
+FMNC-CLIENT: /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib
 FMNC-CLIENT: CMakeFiles/FMNC-CLIENT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable FMNC-CLIENT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable FMNC-CLIENT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FMNC-CLIENT.dir/link.txt --verbose=$(VERBOSE)
-	/usr/local/Cellar/cmake/3.30.2/bin/cmake -E env bash /Users/paillet/local/research/research-frontendclient-fmnc/scripts/post_build_script.sh
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env bash /Users/rpaillet/local/research/research-frontendclient-fmnc/scripts/post_build_script.sh
 
 # Rule to build all files generated by this target.
 CMakeFiles/FMNC-CLIENT.dir/build: FMNC-CLIENT
@@ -124,6 +126,6 @@ CMakeFiles/FMNC-CLIENT.dir/clean:
 .PHONY : CMakeFiles/FMNC-CLIENT.dir/clean
 
 CMakeFiles/FMNC-CLIENT.dir/depend:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/FMNC-CLIENT.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/FMNC-CLIENT.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/FMNC-CLIENT.dir/depend
 

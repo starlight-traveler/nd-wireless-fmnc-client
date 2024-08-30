@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paillet/local/research/research-frontendclient-fmnc
+CMAKE_SOURCE_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/build
+CMAKE_BINARY_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/bu
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.30.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.30.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles /Users/paillet/local/research/research-frontendclient-fmnc/build/lib/quill//CMakeFiles/progress.marks
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles 0
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles /Users/rpaillet/local/research/research-frontendclient-fmnc/build/lib/quill//CMakeFiles/progress.marks
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/clean
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/preinstall
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/preinstall
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/quill/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -136,6 +136,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paillet/local/research/research-frontendclient-fmnc
+CMAKE_SOURCE_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/build
+CMAKE_BINARY_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc/build
 
 # Utility rule file for quill.
 
@@ -74,10 +74,10 @@ lib/quill/CMakeFiles/quill.dir/build: quill
 .PHONY : lib/quill/CMakeFiles/quill.dir/build
 
 lib/quill/CMakeFiles/quill.dir/clean:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build/lib/quill && $(CMAKE_COMMAND) -P CMakeFiles/quill.dir/cmake_clean.cmake
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build/lib/quill && $(CMAKE_COMMAND) -P CMakeFiles/quill.dir/cmake_clean.cmake
 .PHONY : lib/quill/CMakeFiles/quill.dir/clean
 
 lib/quill/CMakeFiles/quill.dir/depend:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc/lib/quill /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build/lib/quill /Users/paillet/local/research/research-frontendclient-fmnc/build/lib/quill/CMakeFiles/quill.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc/lib/quill /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build/lib/quill /Users/rpaillet/local/research/research-frontendclient-fmnc/build/lib/quill/CMakeFiles/quill.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/quill/CMakeFiles/quill.dir/depend
 

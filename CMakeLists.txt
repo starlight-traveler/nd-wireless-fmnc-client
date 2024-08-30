@@ -136,9 +136,10 @@ enable_clang_tidy(ON)
 enable_coverage(${OPTION_ENABLE_COVERAGE})
 
 # OpenSSL
-set(OPENSSL_ROOT_DIR "/usr/local/opt/openssl")
-set(OPENSSL_INCLUDE_DIR "/usr/local/opt/openssl/include")
-set(OPENSSL_LIBRARIES "/usr/local/opt/openssl/lib")
+set(OPENSSL_ROOT_DIR "/opt/homebrew/opt/openssl@3" CACHE PATH "Root directory of OpenSSL")
+set(OPENSSL_INCLUDE_DIR "${OPENSSL_ROOT_DIR}/include")
+set(OPENSSL_CRYPTO_LIBRARY "${OPENSSL_ROOT_DIR}/lib/libcrypto.dylib")
+set(OPENSSL_SSL_LIBRARY "${OPENSSL_ROOT_DIR}/lib/libssl.dylib")
 find_package(OpenSSL REQUIRED)
 
 
@@ -174,6 +175,8 @@ target_include_directories(${PROJECT_NAME}
 # Add new libraries to link against by appending them to this list.
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
+    OpenSSL::SSL
+    OpenSSL::Crypto
     quill::quill
     ${OPENSSL_LIBRARIES}
 )

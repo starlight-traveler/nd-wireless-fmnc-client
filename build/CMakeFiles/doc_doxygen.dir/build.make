@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paillet/local/research/research-frontendclient-fmnc
+CMAKE_SOURCE_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/build
+CMAKE_BINARY_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc/build
 
 # Utility rule file for doc_doxygen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/doc_doxygen.dir/compiler_depend.make
 include CMakeFiles/doc_doxygen.dir/progress.make
 
 CMakeFiles/doc_doxygen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	/usr/local/bin/doxygen /Users/paillet/local/research/research-frontendclient-fmnc/build/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	/opt/homebrew/bin/doxygen /Users/rpaillet/local/research/research-frontendclient-fmnc/build/Doxyfile
 
 doc_doxygen: CMakeFiles/doc_doxygen
 doc_doxygen: CMakeFiles/doc_doxygen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

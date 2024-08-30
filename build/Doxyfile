@@ -3,11 +3,11 @@
 # Project related settings
 PROJECT_NAME           = FMNC-CLIENT
 PROJECT_NUMBER         = 
-OUTPUT_DIRECTORY       = /Users/paillet/local/research/research-frontendclient-fmnc/build/docs
+OUTPUT_DIRECTORY       = /Users/rpaillet/local/research/research-frontendclient-fmnc/build/docs
 OUTPUT_LANGUAGE        = English
 
 # Source code settings
-INPUT                  = "/Users/paillet/local/research/research-frontendclient-fmnc/src" "/Users/paillet/local/research/research-frontendclient-fmnc/include"
+INPUT                  = "/Users/rpaillet/local/research/research-frontendclient-fmnc/src" "/Users/rpaillet/local/research/research-frontendclient-fmnc/include"
 FILE_PATTERNS          = *.cpp *.h
 RECURSIVE              = YES
 EXCLUDE_PATTERNS       = */test/*

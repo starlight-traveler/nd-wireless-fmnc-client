@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paillet/local/research/research-frontendclient-fmnc
+CMAKE_SOURCE_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paillet/local/research/research-frontendclient-fmnc/build
+CMAKE_BINARY_DIR = /Users/rpaillet/local/research/research-frontendclient-fmnc/build
 
 # Utility rule file for check-template.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check-template.dir/compiler_depend.make
 include CMakeFiles/check-template.dir/progress.make
 
 CMakeFiles/check-template:
-	/usr/local/Cellar/cmake/3.30.2/bin/cmake -DPROJECT_SOURCE_DIR= -DPROJECT_BINARY_DIR= -DAPPLIED_CMAKE_INIT_SHA=dac8a001b56c -P /cmake/CheckTemplate.cmake
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DPROJECT_SOURCE_DIR= -DPROJECT_BINARY_DIR= -DAPPLIED_CMAKE_INIT_SHA=b9dcdef27ce6 -P /cmake/CheckTemplate.cmake
 
 check-template: CMakeFiles/check-template
 check-template: CMakeFiles/check-template.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/check-template.dir/clean:
 .PHONY : CMakeFiles/check-template.dir/clean
 
 CMakeFiles/check-template.dir/depend:
-	cd /Users/paillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build /Users/paillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/check-template.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/rpaillet/local/research/research-frontendclient-fmnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build /Users/rpaillet/local/research/research-frontendclient-fmnc/build/CMakeFiles/check-template.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/check-template.dir/depend
 

@@ -97,52 +97,82 @@ $(function(){initNavTree('a00005.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00008_source.html">httplib.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;version.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00011_source.html">logger.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;openssl/ssl.h&gt;</code><br />
+<code>#include &lt;openssl/err.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 </div>
 <p><a href="a00005_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a261c321c196e81758a042f0ae37aca7f" id="r_a261c321c196e81758a042f0ae37aca7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a261c321c196e81758a042f0ae37aca7f">CPPHTTPLIB_OPENSSL_SUPPORT</a></td></tr>
-<tr class="separator:a261c321c196e81758a042f0ae37aca7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad30a9b0bc2a7a4df5def2f335e29485a" id="r_ad30a9b0bc2a7a4df5def2f335e29485a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad30a9b0bc2a7a4df5def2f335e29485a">initialize_ssl</a> ()</td></tr>
+<tr class="separator:ad30a9b0bc2a7a4df5def2f335e29485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b40fa22a22409707f7cfe6dfc771f0f" id="r_a5b40fa22a22409707f7cfe6dfc771f0f"><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b40fa22a22409707f7cfe6dfc771f0f">create_context</a> ()</td></tr>
+<tr class="separator:a5b40fa22a22409707f7cfe6dfc771f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a3bf28bb000b66b7e0e841529ef14d903" id="r_a3bf28bb000b66b7e0e841529ef14d903"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00104.html">httplib::Client</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bf28bb000b66b7e0e841529ef14d903">cli</a> (&quot;https://0.0.0.0:8085&quot;)</td></tr>
-<tr class="separator:a3bf28bb000b66b7e0e841529ef14d903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a261c321c196e81758a042f0ae37aca7f" name="a261c321c196e81758a042f0ae37aca7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a261c321c196e81758a042f0ae37aca7f">&#9670;&#160;</a></span>CPPHTTPLIB_OPENSSL_SUPPORT</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a5b40fa22a22409707f7cfe6dfc771f0f" name="a5b40fa22a22409707f7cfe6dfc771f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b40fa22a22409707f7cfe6dfc771f0f">&#9670;&#160;</a></span>create_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CPPHTTPLIB_OPENSSL_SUPPORT</td>
+          <td class="memname">SSL_CTX * create_context </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00005_source.html#l00001">1</a> of file <a class="el" href="a00005_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00005_source.html#l00014">14</a> of file <a class="el" href="a00005_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keyword">const</span> SSL_METHOD *method = TLS_client_method();</div>
+<div class="line"><span class="lineno">   17</span>    SSL_CTX *ctx = SSL_CTX_new(method);</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">if</span> (!ctx)</div>
+<div class="line"><span class="lineno">   19</span>    {</div>
+<div class="line"><span class="lineno">   20</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Unable to create SSL context&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   21</span>        ERR_print_errors_fp(stderr);</div>
+<div class="line"><span class="lineno">   22</span>        exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> ctx;</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad30a9b0bc2a7a4df5def2f335e29485a" name="ad30a9b0bc2a7a4df5def2f335e29485a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30a9b0bc2a7a4df5def2f335e29485a">&#9670;&#160;</a></span>initialize_ssl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialize_ssl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00005_source.html#l00008">8</a> of file <a class="el" href="a00005_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>    SSL_load_error_strings();</div>
+<div class="line"><span class="lineno">   11</span>    OpenSSL_add_ssl_algorithms();</div>
+<div class="line"><span class="lineno">   12</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -158,45 +188,46 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00005_source.html#l00015">15</a> of file <a class="el" href="a00005_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>           {</div>
-<div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    quill::Logger *logger = <a class="code hl_function" href="a00002.html#a5612e7039d064556accc794105a7397b">initialize_logger</a>();</div>
-<div class="line"><span class="lineno">   18</span> </div>
-<div class="line"><span class="lineno">   19</span>    LOG_DEBUG(logger, <span class="stringliteral">&quot;Build date: {}&quot;</span>, BUILD_DATE);</div>
-<div class="line"><span class="lineno">   20</span>    LOG_DEBUG(logger, <span class="stringliteral">&quot;Project version: {}&quot;</span>, PROJECT_VERSION);</div>
-<div class="line"><span class="lineno">   21</span>    </div>
-<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="#a3bf28bb000b66b7e0e841529ef14d903">cli</a>.enable_server_certificate_verification(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    <span class="keyword">auto</span> res = <a class="code hl_variable" href="#a3bf28bb000b66b7e0e841529ef14d903">cli</a>.<a class="code hl_function" href="a00104.html#abe69f8db45e6d2fe45e712b7465c4de1">Get</a>(<span class="stringliteral">&quot;/hi&quot;</span>);</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    LOG_INFO(logger, <span class="stringliteral">&quot;Body: {}&quot;</span>, res-&gt;body);</div>
-<div class="line"><span class="lineno">   27</span>    LOG_INFO(logger, <span class="stringliteral">&quot;Status: {}&quot;</span>, res-&gt;status);</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> 0; </div>
-<div class="line"><span class="lineno">   30</span>}</div>
-<div class="ttc" id="aa00002_html_a5612e7039d064556accc794105a7397b"><div class="ttname"><a href="a00002.html#a5612e7039d064556accc794105a7397b">initialize_logger</a></div><div class="ttdeci">quill::Logger * initialize_logger()</div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00009">logger.cpp:9</a></div></div>
-<div class="ttc" id="aa00005_html_a3bf28bb000b66b7e0e841529ef14d903"><div class="ttname"><a href="#a3bf28bb000b66b7e0e841529ef14d903">cli</a></div><div class="ttdeci">httplib::Client cli(&quot;https://0.0.0.0:8085&quot;)</div></div>
-<div class="ttc" id="aa00104_html_abe69f8db45e6d2fe45e712b7465c4de1"><div class="ttname"><a href="a00104.html#abe69f8db45e6d2fe45e712b7465c4de1">httplib::Client::Get</a></div><div class="ttdeci">Result Get(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> <a href="a00008_source.html#l09381">httplib.h:9381</a></div></div>
+<p class="definition">Definition at line <a class="el" href="a00005_source.html#l00027">27</a> of file <a class="el" href="a00005_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="#ad30a9b0bc2a7a4df5def2f335e29485a">initialize_ssl</a>();</div>
+<div class="line"><span class="lineno">   30</span>    SSL_CTX *ctx = <a class="code hl_function" href="#a5b40fa22a22409707f7cfe6dfc771f0f">create_context</a>();</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">int</span> sock = socket(AF_INET, SOCK_STREAM, 0);</div>
+<div class="line"><span class="lineno">   33</span>    sockaddr_in addr;</div>
+<div class="line"><span class="lineno">   34</span>    memset(&amp;addr, 0, <span class="keyword">sizeof</span>(addr));</div>
+<div class="line"><span class="lineno">   35</span>    addr.sin_family = AF_INET;</div>
+<div class="line"><span class="lineno">   36</span>    addr.sin_port = htons(8080);</div>
+<div class="line"><span class="lineno">   37</span>    inet_pton(AF_INET, <span class="stringliteral">&quot;127.0.0.1&quot;</span>, &amp;addr.sin_addr);</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    connect(sock, (<span class="keyword">struct</span> sockaddr *)&amp;addr, <span class="keyword">sizeof</span>(addr));</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    SSL *ssl = SSL_new(ctx);</div>
+<div class="line"><span class="lineno">   42</span>    SSL_set_fd(ssl, sock);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (SSL_connect(ssl) == -1)</div>
+<div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        ERR_print_errors_fp(stderr);</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Connected with &quot;</span> &lt;&lt; SSL_get_cipher(ssl) &lt;&lt; <span class="stringliteral">&quot; encryption&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *msg = <span class="stringliteral">&quot;Hello, server!&quot;</span>;</div>
+<div class="line"><span class="lineno">   52</span>        SSL_write(ssl, msg, strlen(msg));</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordtype">char</span> buf[1024] = {0};</div>
+<div class="line"><span class="lineno">   55</span>        SSL_read(ssl, buf, <span class="keyword">sizeof</span>(buf));</div>
+<div class="line"><span class="lineno">   56</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Server responded: &quot;</span> &lt;&lt; buf &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    SSL_free(ssl);</div>
+<div class="line"><span class="lineno">   60</span>    close(sock);</div>
+<div class="line"><span class="lineno">   61</span>    SSL_CTX_free(ctx);</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="aa00005_html_a5b40fa22a22409707f7cfe6dfc771f0f"><div class="ttname"><a href="#a5b40fa22a22409707f7cfe6dfc771f0f">create_context</a></div><div class="ttdeci">SSL_CTX * create_context()</div><div class="ttdef"><b>Definition</b> <a href="a00005_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa00005_html_ad30a9b0bc2a7a4df5def2f335e29485a"><div class="ttname"><a href="#ad30a9b0bc2a7a4df5def2f335e29485a">initialize_ssl</a></div><div class="ttdeci">void initialize_ssl()</div><div class="ttdef"><b>Definition</b> <a href="a00005_source.html#l00008">main.cpp:8</a></div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a3bf28bb000b66b7e0e841529ef14d903" name="a3bf28bb000b66b7e0e841529ef14d903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf28bb000b66b7e0e841529ef14d903">&#9670;&#160;</a></span>cli</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00104.html">httplib::Client</a> cli(&quot;https://0.0.0.0:8085&quot;) </td>
-          <td>(</td>
-          <td class="paramtype">&quot;https://0.0.0.0:8085&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 </div><!-- contents -->
