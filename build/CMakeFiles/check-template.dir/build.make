@@ -67,7 +67,7 @@ include CMakeFiles/check-template.dir/compiler_depend.make
 include CMakeFiles/check-template.dir/progress.make
 
 CMakeFiles/check-template:
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DPROJECT_SOURCE_DIR= -DPROJECT_BINARY_DIR= -DAPPLIED_CMAKE_INIT_SHA=b9dcdef27ce6 -P /cmake/CheckTemplate.cmake
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DPROJECT_SOURCE_DIR= -DPROJECT_BINARY_DIR= -DAPPLIED_CMAKE_INIT_SHA=470e74503f04 -P /cmake/CheckTemplate.cmake
 
 check-template: CMakeFiles/check-template
 check-template: CMakeFiles/check-template.dir/build.make
