@@ -31,54 +31,6 @@ SSL_CTX *create_context()
     return ctx;
 }
 
-void packet_handler_from_192_168_2_2(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
-    // Copy the packet
-    unsigned char buffer[MAX_PACKET_SIZE];
-    memcpy(buffer, packet, header->len);
-
-    // Parse Ethernet header
-    struct ethhdr *eth = (struct ethhdr *)buffer;
-
-    // Only process IP packets
-    if (ntohs(eth->h_proto) != ETH_P_IP) {
-        return;
-    }
-
-    // Get IP header
-    struct iphdr *ip_header = (struct iphdr *)(buffer + sizeof(struct ethhdr));
-
-    // Get destination IP address
-    struct in_addr dest_ip_addr;
-    dest_ip_addr.s_addr = ip_header->daddr;
-    char dest_ip[INET_ADDRSTRLEN];
-    inet_ntop(AF_INET, &(dest_ip_addr), dest_ip, INET_ADDRSTRLEN);
-
-    // Get the MAC address of the destination IP
-    unsigned char *dest_mac = get_mac_address(dest_ip);
-    if (!dest_mac) {
-        std::cerr << "Failed to get MAC address for " << dest_ip << std::endl;
-        return;
-    }
-
-    // Update Ethernet header
-    memcpy(eth->h_source, src_mac, 6); // Set source MAC to our interface's MAC
-    memcpy(eth->h_dest, dest_mac, 6);  // Set destination MAC to destination IP's MAC
-
-    // Send the packet
-    struct sockaddr_ll socket_address{};
-    socket_address.sll_ifindex = if_index;
-    socket_address.sll_halen = ETH_ALEN;
-    memcpy(socket_address.sll_addr, dest_mac, 6);
-
-    ssize_t sent = sendto(raw_socket, buffer, header->len, 0, (struct sockaddr *)&socket_address, sizeof(socket_address));
-    if (sent == -1) {
-        perror("Failed to send packet");
-    } else {
-        std::cout << "Forwarded packet from 192.168.2.2 to " << dest_ip << ", length: " << sent << " bytes" << std::endl;
-    }
-}
-
-
 void listen_for_responses(quill::Logger *logger, SSL *ssl, bool &run, std::mutex &mtx, std::condition_variable &cv)
 {
     while (run)
