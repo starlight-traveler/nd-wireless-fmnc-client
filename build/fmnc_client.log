@@ -1,0 +1,3 @@
+13:03:34.930985114 [109136] main.cpp:91                  LOG_INFO      root         Connected with TLS_AES_256_GCM_SHA384 encryption.
+13:03:34.931145041 [109136] main.cpp:101                 LOG_DEBUG     root         Message sent: Hello, server!
+13:03:35.024606929 [109138] main.cpp:44                  LOG_INFO      root         Server responded: Hello, server!
